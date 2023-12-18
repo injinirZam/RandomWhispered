@@ -1,0 +1,114 @@
+/* Your existing styles */
+
+/* Header Styles */
+.title {
+  color: #1F51FF;
+  padding: 5px;
+}
+
+.subtitle {
+  color: rgb(33, 67, 67);
+}
+
+.author {
+  color: #090962;
+}
+
+/* Container Styles */
+.container {
+  margin-top: 20px;
+}
+
+/* Profile Styles */
+.profile img {
+  margin-bottom: 10px;
+  
+}
+
+.bio {
+  color: red;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Insights Styles */
+.insights h5 {
+  color: #1495d1;
+}
+
+/* Closing Styles */
+.closing {
+  text-align: justify;
+  color: red;
+}
+
+.social-link {
+  color: #1495d1;
+}
+
+/* Quote Box Styles */
+#quote-box {
+  text-align: center;
+  margin: 10% auto;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+#text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#author {
+  font-style: italic;
+  color: #555;
+}
+body {
+  background-color: #f2f2f2;
+}
+.navbar-side {
+  flex-direction: column;
+}
+
+
+.navbar-brand {
+  font-weight: normal;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: normal; /* Make the font non-bold */
+}
+/* Navigation Bar Styles */
+.navbar {
+  flex-direction: row-reverse; /* Change flex direction to row-reverse */
+}
+
+.navbar-toggler {
+  order: 0; /* Move the toggler to the right */
+}
+
+.navbar-brand {
+  margin-right: auto; /* Move the brand to the left */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Move the nav links to the right */
+}
+
+/* Your existing styles */
+/* ... (your other styles remain unchanged) */
+
