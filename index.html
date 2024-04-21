@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Tots ni Zam</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <title>Random Thoughts by Zam</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .title, .subtitle {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            padding: 2rem 0;
+        }
+        #quote-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        button, a.btn {
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+        .profile img {
+            display: block;
+            margin: 0 auto;
+        }
+        hr {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><strong>Zam's Tots and WoW</strrong></a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><strong>Thoughts & Words of Wisdom</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,52 +60,42 @@
                     <a class="nav-link" href="#header">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#quote-box">Quotes</a>
+                    <a class="nav-link" href="#quote-box">Random Tots and Wow</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="myPortfol.html">Who is Zam Campiao Datumanong?</a>
-                    
+                    <a class="nav-link" href="https://injinirzam.github.io/pilosoponginjinir/">About Zam Campiao</a>
                 </li>
-<!--                 
-                <li class="nav-item">
-                    <a class="nav-link" href="#insights">Insights</a>
-                </li> -->
-
             </ul>
         </div>
     </nav>
 
-        <h1 class="text-center title">TOTS / <span class="subtitle">WOW</span></h1>
-        <h5 class="text-center subtitle">thoughts <span class="subtitle">/ words of wisdom</span></h5>
-        <p class="text-center author">by pilosopong injinir</p>
-    
-    <div class="container">
-        <div id="quote-box">
-            <div id="text">
-                <p></p>
-            </div>
-            <div id="author">
-                <p>-</p>
-            </div>
-            <button id="new-quote" class="btn btn-primary">New Quote</button>
-            <a id="tweet-quote" class="btn btn-info" href="#" target="_blank">Tweet Quote</a>
-            <button id="facebook-share" class="btn btn-primary">Share on Facebook</button>
-        </div>
+    <h1></h1>
+    <h1 class="title">TOTS & <span class="subtitle">WOW</span></h1>
+    <h5 class="subtitle">random whispered</h5>
+    <p class="text-center">by Zam Campiao</p>
+
+    <div class="container" id="quote-box">
+        <div id="text"><p></p></div>
+        <div id="author"><p>-</p></div>
+        <button id="new-quote" class="btn btn-dark" >New Quote</button>
+        <br>
+        <a id="tweet-quote" class="btn btn-info" href="#" target="_blank">Tweet Quote</a>
+        <button id="facebook-share" class="btn btn-primary">Share on Facebook</button>
     </div>
 
-    
-
     <div class="container profile">
-        <img src="cuti.png" alt="My Profile Image" height="180">
-        <h1>Zam Campiao</h1>
-        <h2>Homo Sapiens</h2>
-        <p class="bio">I'm Zam Campiao, and I have a deep love for reading and listening to stories. Each book or person is a door to a new world, and I enjoy opening it with my imagination. I am curious and interested in learning about various topics in life, from science and math to art and history. I find all these things fascinating and love to explore them.</p>
+        <img src="BARDAGULAN.png" alt="My Profile Image" height="180">
+        <h1 style="text-align: center;">Zam Campiao</h1>
+        <h2 style="text-align: center;">Homo Sapiens</h2>
+        <p class="bio" style="text-align: justify;">A passionate reader and story maker, Zam Campiao enjoys exploring the nature of human experience through various mediums. Whether delving into a new book or listening to life stories, Zam embraces the diversity of life with open arms.</p>
+    </div>
+        
         <hr>
     </div>
 
         </div>
         <div class="container insights">
-        <h5 class="subtitle">Here's my short insights about You! Yes, You are!</h5>
+        <h5 class="subtitle"><b>Here's my short insights about You! Yes, You are!</b></h5>
 
         
         <h6 style="text-align: justify; padding-left: 20px; padding-right: 20px; color: black;"  >
@@ -856,6 +881,8 @@
 
     // Initial setup
     setNewQuote();
+
+    
 
     const facebookShareButton = document.getElementById("facebook-share");
 
